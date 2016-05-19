@@ -264,7 +264,7 @@ public class SteamVR_ExternalCamera : MonoBehaviour
 
 	void OnEnable()
 	{
-		// Move game view cameras to lower-right quadrant.
+		// Move game view cameras to lower-right quadrant... is what this is suposed to do, but I'm trying to make it go fullscreen! Hopefully this wasn't already automatic for the program, and if it was just delete this script from the camera components! - Peter
 		cameras = FindObjectsOfType<Camera>() as Camera[];
 		if (cameras != null)
 		{
